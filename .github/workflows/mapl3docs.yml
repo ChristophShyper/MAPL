@@ -1,9 +1,6 @@
 name: "Build MAPL3 Documentation"
 
 on:
-  push:
-    branches:
-      - develop
   workflow_dispatch:
 
 permissions:

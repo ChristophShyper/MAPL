@@ -1,7 +1,8 @@
 name: "Enforce Changelog"
 on:
-  pull_request:
-      types: [opened, synchronize, reopened, ready_for_review, labeled, unlabeled]
+#  pull_request:
+#      types: [opened, synchronize, reopened, ready_for_review, labeled, unlabeled]
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}

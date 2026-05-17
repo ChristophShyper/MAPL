@@ -1,16 +1,7 @@
 name: Build Tests
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    # Do not run if the only files changed cannot affect the build
-    paths-ignore:
-      - "**.md"
-      - "**.json"
-      - "Python/**"
-      - ".github/CODEOWNERS"
-      - ".github/PULL_REQUEST_TEMPLATE.md"
-      - ".editorconfig"
+  workflow_dispatch:
 
 concurrency:
   # For PRs: one slot per PR number.
